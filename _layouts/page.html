@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% assign lang = page.lang | default: site.lang | default: "fr" %}
+
+{% include hero-page.html title=page.title %}
+
+<div class="fr-container fr-py-6w fr-px-2w">
+  {{ content }}
+</div>

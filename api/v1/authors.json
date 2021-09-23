@@ -1,0 +1,14 @@
+---
+layout: null
+---
+[
+    {% for author in site.authors %}
+        {
+            "id": "{{ author.id }}",
+            "fullname": "{{ author.fullname }}",
+            "start": "{{ author.missions.first.start }}",
+            "end": "{{ author.missions.last.end }}"
+        }
+        {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]

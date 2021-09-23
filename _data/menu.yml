@@ -1,0 +1,22 @@
+---
+title:
+nav:
+  -
+    label: Pourquoi cette radio
+    target: _pages/approche.md
+  -
+    label: Grille des programmes
+    target: _pages/startups.md
+  -
+    label: Historique des titres
+    target: _pages/startups.md
+
+shortcuts:
+  -
+    label: beta.gouv.fr
+    external: true
+    url: https://beta.gouv.fr
+  -
+    label: Blog
+    external: true
+    url: https://blog.beta.gouv.fr

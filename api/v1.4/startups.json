@@ -1,0 +1,21 @@
+---
+layout: null
+---
+
+{ "links":
+    { "self": "{{ site.url }}/startups" }
+, "data":
+    [
+    {% for startup in site.startups %}
+        { "id"        : "{{ startup.id | remove: '/startups/' }}"
+        , "type"      : "startup"
+        , "attributes":
+            { "name"          : "{{ startup.title }}"
+            , "pitch"         : "{{ startup.mission }}"
+            , "status"        : "{{ startup.phases.last.name }}"
+            }
+        }
+        {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ]
+}
