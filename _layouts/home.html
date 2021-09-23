@@ -30,51 +30,24 @@ layout: default
 </section>
 <section class="fr-py-6w section-product">
   <div class="fr-container">
-    <h2 class="section-title">Des services à impact</h2>
-    <h4 class="section-description">conçus pour tous, avec les administrations</h4>
-    <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--center startups fr-pt-6w">
-      {% assign startups = site.startups %}
-      {% assign starts = "transport.data.gouv.fr,La Bonne Alternance,Pix,Mon-entreprise.fr" | split: ","  %}
-      {% for startup in startups %}
-          <!-- {{ startup.title }} -->
-          {% if starts contains startup.title %}
-            <div class="fr-col-12 fr-col-md-3">
-              <div class="fr-card fr-enlarge-link" >
-                <div class="fr-card__body">
-                  <h4 class="fr-card__title">
-                    <a class="fr-card__link" href="{{ startup.url }}" >{{ startup.title | strip_html }}</a>
-                  </h4>
-            
-                  <p class="fr-card__detail">{{ startup.owner | strip_html }}</p>
-                  <p class="fr-card__desc">{{ startup.mission | strip_html }}</p>
-                </div>
-                <div class="fr-card__img">
-                  {% include screenshot.html startup=startup force=true %}
-                </div>
-              </div>
-            </div>
-          {% endif %}
-      {% endfor %}
-    </div>
-    <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters startups fr-pt-6w">
-      <a class="fr-btn fr-btn--md fr-enlarge-link fr-btn--secondary" href="/startups">Plus de réalisations</a>
-    </div>
+    <h2 class="section-title">En direct</h2>
+<iframe src="https://radiocast.robiweb.net/public/radio_betagouv/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
   </div>
 </section>
 <section class="fr-py-6w section-blue">
 <div class="fr-container">
   <div class="fr-grid-row fr-grid-row--center">
     <div>
-      <h2 class="section-title">Faisons équipe</h2>
+      <h2 class="section-title">Donnez votre voix !</h2>
       <h4 class="section-description">
-        Agent public, rejoignez une équipe<br>
-<span class="section-highlight">pluridisciplinaire</span>, <span class="section-highlight">engagée</span> au <span class="section-highlight">service de l’intérêt général</span>
+        Radio BetaGouv, ce sont les voix<br>
+<span class="section-highlight">des membres de BetaGouv</span>
       </h4>
       <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters startups fr-py-6w">
-        <a class="fr-btn fr-btn--md button-white-border fr-btn--secondary fr-enlarge-link" href="/devenir-intrapreneur">Devenir intrapreneur</a>
+        <a class="fr-btn fr-btn--md button-white-border fr-btn--secondary fr-enlarge-link" href="/devenir-intrapreneur">Devenir radio betagouveur</a>
       </div>
       <div class="fr-grid-row fr-grid-row--gutters startups">
-        <div class="fr-col-12 fr-col-md-4">
+        <div class="fr-col-12 fr-col-md-6">
           <div class="fr-card fr-card--no-arrow">
             <div class="fr-card__body"> 
               <div class="home-team-animation-container">
@@ -82,14 +55,14 @@ layout: default
                 <object data="/assets/home/coach.svg" class="home-team-animation-foreground"></object>
               </div>      
               <h3 class="fr-card__title">
-                Coach
+                Jingle
               </h3>
               <!-- <p class="fr-card__detail">{{ startup.owner | strip_html }}</p> -->
-              <p class="fr-card__desc">Partage son expertise du numérique et de l’entreprenariat</p>
+              <p class="fr-card__desc">Envoyez votre voix, nous en ferons un jingle</p>
             </div>
           </div>
         </div>
-        <div class="fr-col-12 fr-col-md-4">
+        <div class="fr-col-12 fr-col-md-6">
           <div class="fr-card fr-card--no-arrow">
             <div class="fr-card__body">  
               <div class="home-team-animation-container">
@@ -97,82 +70,15 @@ layout: default
                 <object data="/assets/home/intra.svg" class="home-team-animation-foreground"></object>
               </div>       
               <h3 class="fr-card__title">
-                Intrapreneure ou intrapreneur
+                Playlist
               </h3>
               <!-- <p class="fr-card__detail">{{ startup.owner | strip_html }}</p> -->
               <p class="fr-card__desc">
-                <b>Agent public</b> et expert(e) métier, responsable d’un produit après une formation beta.gouv  
+                Envoyez votre playlist, nous la diffuserons sur la radio
               </p>
             </div>
           </div>
         </div>
-        <div class="fr-col-12 fr-col-md-4">
-          <div class="fr-card fr-card--no-arrow">
-            <div class="fr-card__body">
-              <div class="home-team-animation-container">
-                <object data="/assets/home/deploiement_back.svg" class="home-team-animation-background"></object>    
-                <object data="/assets/home/deploiement.svg" class="home-team-animation-foreground"></object>
-              </div>      
-              <h3 class="fr-card__title">
-                Chargée ou chargé de déploiement
-              </h3>
-              <!-- <p class="fr-card__detail">{{ startup.owner | strip_html }}</p> -->
-              <p class="fr-card__desc">
-                Aide à augmenter le nombre d’utilisatrices et utilisateurs, puis veille à leur satisfaction
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="fr-col-12 fr-col-md-4">
-          <div class="fr-card fr-card--no-arrow">
-            <div class="fr-card__body">
-              <div class="home-team-animation-container">
-                <object data="/assets/home/design_back.svg" class="home-team-animation-background"></object>    
-                <object data="/assets/home/design.svg" class="home-team-animation-foreground"></object>
-              </div>     
-              <h3 class="fr-card__title">
-                Designer
-              </h3>
-              <!-- <p class="fr-card__detail">{{ startup.owner | strip_html }}</p> -->
-              <p class="fr-card__desc">
-                Conçoit, améliore l’expérience, et teste les parcours avec les utilisatrices et utilisateurs
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="fr-col-12 fr-col-md-4">
-          <div class="fr-card fr-card--no-arrow">
-            <div class="fr-card__body">
-              <div class="home-team-animation-container">
-                <object data="/assets/home/dev_back.svg" class="home-team-animation-background"></object>    
-                <object data="/assets/home/dev.svg" class="home-team-animation-foreground"></object>
-              </div>     
-              <h3 class="fr-card__title">
-                Développeuse ou développeur
-              </h3>
-              <p class="fr-card__desc">
-                Crée le service dans un langage de programmation
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="fr-col-12 fr-col-md-4">
-          <div class="fr-card fr-card--no-arrow">
-            <div class="fr-card__body">
-              <div class="home-team-animation-container">
-                <object data="/assets/home/produit_back.svg" class="home-team-animation-background"></object>    
-                <object data="/assets/home/produit.svg" class="home-team-animation-foreground"></object>
-              </div>                        
-              <h3 class="fr-card__title">
-                Gestionnaire de produit
-              </h3>
-
-              <p class="fr-card__desc">
-                Aide à prioriser en fonction des besoins des utilisatrices et utilisateurs
-              </p>
-            </div>
-          </div>
-        </div>        
       </div>
     </div>  
   </div>
@@ -181,7 +87,7 @@ layout: default
 <section class="fr-py-6w section-principle">
   <div class="fr-container">
     <div class="centered">
-      <h2 class="section-title">Un programme :<br> <span style="color: #4941C0">3 principes</span></h2>
+      <h2 class="section-title">Radio Betagouv<br> <span style="color: #4941C0">en 3 points</span></h2>
     </div>
     <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters startups">
       <div class="fr-col-12 fr-col-md-4">
@@ -190,17 +96,17 @@ layout: default
       <div class="fr-py-6w fr-col-12 fr-col-md-8">
         <p class="section-principle-list-item">
           <span class="section-principle-list-item-number">1.</span>
-          <span class="section-principle-list-item-content">Les besoins des <b>utilisatrices et utilisateurs</b> sont toujours prioritaires.</span>
+          <span class="section-principle-list-item-content">Une radio pour la communauté BetaGouv</span>
         </p>
         <p class="section-principle-list-item">
           <span class="section-principle-list-item-number">2.</span>
-          <span class="section-principle-list-item-content">Nous travaillons sans préjuger du résultat final. Seul l'<b>impact compte</b></span>.
+          <span class="section-principle-list-item-content">Une radio par la communauté BetaGouv</span>.
         </p>
         <p class="section-principle-list-item">
           <span class="section-principle-list-item-number">3.</span>
-          <span class="section-principle-list-item-content">Nous faisons <b>confiance aux agents publics</b>, qui connaissent le terrain</span>.
+          <span class="section-principle-list-item-content">Il faut toujours 3 points</span>.
         </p>
-        <a class="fr-btn fr-btn--md fr-btn--secondary fr-enlarge-link" href="/approche/manifeste">Lire notre manifeste</a>
+        <a class="fr-btn fr-btn--md fr-btn--secondary fr-enlarge-link" href="/approche/manifeste">Lire notre raison d'être</a>
       </div>      
     </div>
   </div>
@@ -258,4 +164,3 @@ layout: default
   })
 
 </script>
-
