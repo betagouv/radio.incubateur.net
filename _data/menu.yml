@@ -3,13 +3,13 @@ title:
 nav:
   -
     label: Pourquoi cette radio
-    target: _pages/approche.md
+    target: _pages/pourquoi.md
   -
     label: Grille des programmes
-    target: _pages/startups.md
+    target: _pages/programme.md
   -
     label: Historique des titres
-    target: _pages/startups.md
+    target: _pages/historique.md
 
 shortcuts:
   -
