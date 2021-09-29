@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.1.1"
+gem 'rake'
 
 group :jekyll_plugins do
    gem 'jekyll-redirect-from'
@@ -10,7 +11,6 @@ group :test do
   gem 'minitest'
   gem 'html-proofer'
   gem 'jsonlint'
-  gem 'rake'
   gem 'kwalify'
   gem 'opengraph_parser'
 end
