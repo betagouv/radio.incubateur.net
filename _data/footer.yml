@@ -6,7 +6,7 @@ links:
     children:
     -
       label: Code source
-      url: https://github.com/betagouv/radiobetagouv
+      url: https://github.com/betagouv/radio.incubateur.net/
     -
       label: Annuaire des membres
       url: https://beta.gouv.fr/annuaire
